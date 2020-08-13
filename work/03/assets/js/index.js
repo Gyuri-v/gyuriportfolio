@@ -35,7 +35,6 @@ $(document).ready(function(){
     
     //navigation sub menu accordian
     $('.tit_menu>li').click(function(){
-//        $(this).children('.sub_menu').slideToggle();
         var subHight = $(this).find('.sub_menu ul').outerHeight();
         
         if( $(this).hasClass('on') ){
@@ -43,6 +42,8 @@ $(document).ready(function(){
             $(this).children('.sub_menu').css({height : 0});
         }
         else{
+            $('.tit_menu>li').removeClass('on');
+            $('.sub_menu').css({height : 0});
             $(this).addClass('on');
             $(this).children('.sub_menu').css({height : subHight});
         }

@@ -35,7 +35,11 @@
 .nav .nav_menu .tit_menu>li.on>a::after{ top: 24px; transform: rotate(225deg) }
 .nav .nav_menu .tit_menu>li:last-child>a::after{ display: none; }
 
-.nav .nav_menu .sub_menu{ height: 0; overflow: hidden;}
+.nav .nav_menu .sub_menu{ height: 0; overflow: hidden;
+    transition: 0.3s ease-in-out; 
+    -moz-transition: 0.3s ease-in-out; 
+    -ms-transition: 0.3s ease-in-out; 
+    -o-transition: 0.3s ease-in-out;}}
 .nav .nav_menu .sub_menu li{ width: 100%; font-family: 'Noto Sans KR', sans-serif;  }
 .nav .nav_menu .sub_menu li a{ display: block; padding: 10px 0 10px 40px; box-sizing: border-box; font-size: 16px; font-weight: 500; line-height: 24px;}
 
