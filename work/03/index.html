@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gyuri">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배럴</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/ScrollMagic.min.js"></script>                
+    <script src="assets/js/debug.addIndicators.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/animation.gsap.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="gnb">
+                <h1><a href="#">배럴로고</a></h1>
+                <ul class="gnb_util">
+                    <li class="btn_cart"><a href="#"><img src="assets/img/icon/btn_cart_white.svg" alt="장바구니"></a></li>
+                    <li class="btn_user"><a href="#"><img src="assets/img/icon/btn_user_white.svg" alt="마이페이지"></a></li>
+                    <li class="btn_nav"><a href="javascript:void(0)"><img src="assets/img/icon/btn_nav_white.svg" alt="메뉴"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav_top">
+                <div class="login"><a href="#">로그인</a></div>
+                <div class="close"><a href="javascript:void(0)">메뉴 닫기</a></div>
+            </div>
+            <div class="nav_search">
+                <input type="text" placeholder="검색어를 입력해주세요.">
+                <button type="button"></button>
+            </div>
+            <nav class="nav_menu">
+                <ul class="tit_menu">
+                    <li>
+                        <a href="javascript:void(0)">워터스포츠</a>
+                        <div class="sub_menu">
+                            <ul class="inner">
+                                <li><a href="#">워터스포츠 전체보기</a></li>
+                                <li><a href="#">우먼</a></li>
+                                <li><a href="#">맨</a></li>
+                                <li><a href="#">유스</a></li>
+                                <li><a href="#">키즈</a></li>
+                                <li><a href="#">컬래버레이션</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">실내수영</a>
+                        <div class="sub_menu">
+                            <ul class="inner">
+                                <li><a href="#">실내수영 전체보기</a></li>
+                                <li><a href="#">우먼</a></li>
+                                <li><a href="#">맨</a></li>
+                                <li><a href="#">키즈</a></li>
+                                <li><a href="#">컬래버레이션</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">배럴핏</a>
+                        <div class="sub_menu">
+                            <ul class="inner">
+                                <li><a href="#">배럴핏 전체보기</a></li>
+                                <li><a href="#">상의</a></li>
+                                <li><a href="#">하의</a></li>
+                                <li><a href="#">액세서리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">홀리데이</a>
+                        <div class="sub_menu">
+                            <ul class="inner">
+                                <li><a href="#">홀리데이 전체보기</a></li>
+                                <li><a href="#">우먼</a></li>
+                                <li><a href="#">맨</a></li>
+                                <li><a href="#">키즈</a></li>
+                                <li><a href="#">액세서리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">액세서리</a>
+                        <div class="sub_menu">
+                            <ul class="inner">
+                                <li><a href="#">액세서리 전체보기</a></li>
+                                <li><a href="#">워터스포츠</a></li>
+                                <li><a href="#">실내수영</a></li>
+                                <li><a href="#">배럴핏</a></li>
+                                <li><a href="#">홀리데이</a></li>
+                                <li><a href="#">컬래버레이션</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">코스메틱스</a>
+                        <div class="sub_menu">
+                            <ul class="inner">
+                                <li><a href="#">코스메틱스 전체보기</a></li>
+                                <li><a href="#">스위머즈</a></li>
+                                <li><a href="#">스킨케어</a></li>
+                                <li><a href="#">써머즈</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">아울렛</a>
+                        <div class="sub_menu">
+                            <ul class="inner">
+                                <li><a href="#">아울렛 전체보기</a></li>
+                                <li><a href="#">우먼</a></li>
+                                <li><a href="#">맨</a></li>
+                                <li><a href="#">키즈</a></li>
+                                <li><a href="#">액세서리</a></li>
+                                <li><a href="#">30%</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">브랜드 소개</a>
+                        <div class="sub_menu">
+                            <ul class="inner">
+                                <li><a href="#">비주얼</a></li>
+                                <li><a href="#">브랜드스토리</a></li>
+                                <li><a href="#">테크놀로지</a></li>
+                                <li><a href="#">배럴이슈</a></li>
+                                <li><a href="#">배럴팀</a></li>
+                                <li><a href="#">스프린트 챔피언십</a></li>
+                                <li><a href="#">SOS 생존수영 캠페인</a></li>
+                                <li><a href="#">오프라인 매장안내</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">체험형 할인</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav_bx">
+                <div class="nav_bx_txt_wrap">
+                    <p class="nav_bx_tit">매장안내</p>
+                    <p class="nav_bx_txt">가까운 배럴 매장에서 다양한 제품을 직접 만나보세요.</p>
+                </div>
+                <div class="nav_bx_link">
+                    <a href="#">매장안내 바로가기</a>
+                </div>
+            </div>
+            <div class="nav_bx">
+                <div class="nav_bx_txt_wrap">
+                    <p class="nav_bx_tit">고객상담 1899-8751</p>
+                    <p class="nav_bx_txt">평일10:00-18:00 | 토,일,공휴일 휴무</p>
+                    <p class="nav_bx_txt">점심13:00-14:00 </p>
+                </div>
+                <div class="nav_bx_link">
+                    <a href="#">고객센터 바로가기</a>
+                </div>
+            </div>
+            <div class="nav_sns">
+                <ul>
+                    <li><a href="#" class="sns01"></a></li>
+                    <li><a href="#" class="sns02"></a></li>
+                    <li><a href="#" class="sns03"></a></li>
+                    <li><a href="#" class="sns04"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_vis">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide vis_slide1"><img src="assets/img/bg/bg_vis_slide1.jpg" alt="2020년 글로우 컬렉션 출시"></div>
+                    <div class="swiper-slide vis_slide2"><img src="assets/img/bg/bg_vis_slide2.jpg" alt="배럴 & 구호 콜라보레이션"></div>
+                    <div class="swiper-slide vis_slide3"><img src="assets/img/bg/bg_vis_slide3.jpg" alt="2020년 배럴프렌즈 소미 & 헨리"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="main_best">
+            <h3 class="txt_title" data-aos="fade-up">BEST PRODUCT</h3>
+            <div class="slide_nav" data-aos="fade-up">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide on"><a href="javascript:void(0)"><span>ALL</span></a></div>
+                        <div class="swiper-slide"><a href="javascript:void(0)"><span>WOMEN</span></a></div>
+                        <div class="swiper-slide"><a href="javascript:void(0)"><span>MEN</span></a></div>
+                        <div class="swiper-slide"><a href="javascript:void(0)"><span>KIDS</span></a></div>
+                        <div class="swiper-slide"><a href="javascript:void(0)"><span>BRFIT</span></a></div>
+                        <div class="swiper-slide"><a href="javascript:void(0)"><span>HOLIDAY</span></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="best_con" data-aos="fade-up">
+                <div class="swiper-container slide1 on">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s1_1.gif" alt="유니섹스 매쉬 슬리브리스">
+                                <div class="txt_wrap">
+                                    <strong>유니섹스 매쉬 슬리브리스</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">33,000원</strong>
+                                        <span class="n_price">55,000원</span>
+                                        <span class="discount">40%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s1_2.gif" alt="유니섹스 매쉬 숏 슬리브">
+                                <div class="txt_wrap">
+                                    <strong>유니섹스 매쉬 숏 슬리브</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">23,400원</strong>
+                                        <span class="n_price">39,000원</span>
+                                        <span class="discount">40%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s1_3.gif" alt="배럴X칸코 우먼 트레이닝 T V백 스트랩 스윔슈트">
+                                <div class="txt_wrap">
+                                    <strong>배럴X칸코 우먼 트레이닝 T V백 스트랩 스윔슈트</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">59,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s1_4.gif" alt="유니섹스 와셔 보드숏">
+                                <div class="txt_wrap">
+                                    <strong>유니섹스 와셔 보드숏</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">33,000원</strong>
+                                        <span class="n_price">55,000원</span>
+                                        <span class="discount">40%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s1_5.gif" alt="배럴X칸코 우먼 트레이닝 T V백 스트랩 스윔슈트">
+                                <div class="txt_wrap">
+                                    <strong>배럴X칸코 우먼 트레이닝 T V백 스트랩 스윔슈트</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">59,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container slide2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s2_1.gif" alt="우먼 글로우 스트링 원피스">
+                                <div class="txt_wrap">
+                                    <strong>우먼 글로우 스트링 원피스</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">68,000원</strong>
+                                        <span class="n_price">103,500원</span>
+                                        <span class="discount">34%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s2_2.gif" alt="우먼 벨라 워터 레깅스">
+                                <div class="txt_wrap">
+                                    <strong>우먼 벨라 워터 레깅스</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">39,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s2_3.gif" alt="우먼 베니스 워터 레깅스">
+                                <div class="txt_wrap">
+                                    <strong>우먼 베니스 워터 레깅스</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">29,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s2_4.gif" alt="유니섹스 와셔 보드숏">
+                                <div class="txt_wrap">
+                                    <strong>우먼 엘린 하프 집업 래쉬가드</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">65,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s2_5.gif" alt="배럴X칸코 우먼 트레이닝 T V백 스트랩 스윔슈트">
+                                <div class="txt_wrap">
+                                    <strong>우먼 리나 집업 래쉬가드</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">65,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container slide3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s3_1.gif" alt="유니섹스 피크 래쉬가드">
+                                <div class="txt_wrap">
+                                    <strong>유니섹스 피크 래쉬가드</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">45,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s3_2.gif" alt="맨 레이어드 래쉬가드">
+                                <div class="txt_wrap">
+                                    <strong>맨 레이어드 래쉬가드</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">55,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s3_3.gif" alt="맨 플래그 래쉬가드">
+                                <div class="txt_wrap">
+                                    <strong>맨 플래그 래쉬가드</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">70,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s3_4.gif" alt="맨 오드 래쉬가드">
+                                <div class="txt_wrap">
+                                    <strong>맨 오드 래쉬가드</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">55,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s3_5.gif" alt="맨 말리부 워터 레깅스">
+                                <div class="txt_wrap">
+                                    <strong>맨 말리부 워터 레깅스</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">35,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container slide4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s4_1.gif" alt="키즈 버디 워터 레깅스">
+                                <div class="txt_wrap">
+                                    <strong>키즈 버디 워터 레깅스 - 로즈 핑크</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">32,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s4_2.gif" alt="키즈 버디 워터 레깅스">
+                                <div class="txt_wrap">
+                                    <strong>키즈 버디 워터 레깅스 - 페일 민트</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">32,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s4_3.gif" alt="키즈 빅 로고 워터 레깅스">
+                                <div class="txt_wrap">
+                                    <strong>키즈 빅 로고 워터 레깅스</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">29,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s4_4.gif" alt="키즈 스트링 워터 레깅스">
+                                <div class="txt_wrap">
+                                    <strong>키즈 스트링 워터 레깅스</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">29,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s4_5.gif" alt="[10~14 세용] 유스 마리나 워터 레깅스">
+                                <div class="txt_wrap">
+                                    <strong>[10~14 세용] 유스 마리나 워터 레깅스</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">29,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container slide5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s5_1.gif" alt="배럴핏 스트랩 체크 브라탑">
+                                <div class="txt_wrap">
+                                    <strong>배럴핏 스트랩 체크 브라탑</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">36,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s5_2.gif" alt="배럴핏 체크 스퀘어 크롭탑">
+                                <div class="txt_wrap">
+                                    <strong>배럴핏 체크 스퀘어 크롭4</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">34,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s5_3.gif" alt="배럴핏 멜로우 숏 슬리브">
+                                <div class="txt_wrap">
+                                    <strong>배럴핏 멜로우 숏 슬리브</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">32,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s5_4.gif" alt="배럴핏 컬러 우븐 맨투맨">
+                                <div class="txt_wrap">
+                                    <strong>배럴핏 컬러 우븐 맨투맨</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">42,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s5_5.gif" alt="배럴핏 컬러 우븐 쇼츠">
+                                <div class="txt_wrap">
+                                    <strong>배럴핏 컬러 우븐 쇼츠</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">35,000원</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container slide6">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s6_1.gif" alt="우먼 메쉬 크롭탑">
+                                <div class="txt_wrap">
+                                    <strong>우먼 메쉬 크롭탑</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">23,400원</strong>
+                                        <span class="n_price">39,000원</span>
+                                        <span class="discount">40%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s6_2.gif" alt="유니섹스 메쉬 슬리브리스">
+                                <div class="txt_wrap">
+                                    <strong>유니섹스 메쉬 슬리브리스</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">33,000원</strong>
+                                        <span class="n_price">55,000원</span>
+                                        <span class="discount">40%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s6_3.gif" alt="유니섹스 메쉬 숏 슬리브">
+                                <div class="txt_wrap">
+                                    <strong>유니섹스 메쉬 숏 슬리브</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">23,400원</strong>
+                                        <span class="n_price">39,000원</span>
+                                        <span class="discount">40%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s6_4.gif" alt="우먼 메쉬 원피스">
+                                <div class="txt_wrap">
+                                    <strong>우먼 메쉬 원피스</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">27,000원</strong>
+                                        <span class="n_price">45,000원</span>
+                                        <span class="discount">40%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/img/banner/bn_best_s6_5.gif" alt="유니섹스 웨이브 라운드 셔츠">
+                                <div class="txt_wrap">
+                                    <strong>유니섹스 웨이브 라운드 셔츠</strong>
+                                    <div class="price_info">
+                                        <strong class="c_price">21,000원</strong>
+                                        <span class="n_price">35,000원</span>
+                                        <span class="discount">40%</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="more">
+                    <a href="#">VIEW MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="main_event">
+            <h3 class="txt_title" data-aos="fade-up">EVENT NOW</h3>
+            <div class="swiper-container" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="assets/img/banner/bn_event_slide1.jpg" alt="LOVE US">
+                            <div class="txt_wrap">
+                                <strong>LOVE US</strong>
+                                <p>귀여운 망고, 로코, 도리, 팰리와 함께<br>멸종 위기의 동물 친구들에게 관심과 사랑을 나눠주세요.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="assets/img/banner/bn_event_slide2.jpg" alt="반려동물을 위한 독특한 배럴 개쉬가드">
+                            <div class="txt_wrap">
+                                <strong>반려동물을 위한 배럴 개쉬가드</strong>
+                                <p>개쉬가드 출시를 기념하여 사랑하는 반려동물과 즐거운 여름을 위한 개쉬가드 커플 세트 10% 할인!</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="assets/img/banner/bn_event_slide3.jpg" alt="스노클 세트 20% 할인">
+                            <div class="txt_wrap">
+                                <strong>스노클 세트 20% 할인</strong>
+                                <p>맨/우먼 스노클 세트를 20% 할인된 특별한 가격으로 만나보세요.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="main_cat">
+            <h3 class="txt_title" data-aos="fade-up">CATEGORY</h3>
+            <div class="idxtext"></div>
+            <ul>
+                <li class="cat01" data-aos="fade-up">
+                    <a href="#">
+                        <span class="bg"></span>
+                        <div class="txt_wrap">
+                            <strong>BARREL FRIENDS</strong>
+                            <div class="more">VIEW MORE</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="cat02" data-aos="fade-left">
+                    <a href="#">
+                        <span class="bg"></span>
+                        <div class="txt_wrap">
+                            <strong>BARREL FIT</strong>
+                            <div class="more">VIEW MORE</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="cat03" data-aos="fade-right">
+                    <a href="#">
+                        <span class="bg"></span>
+                        <div class="txt_wrap">
+                            <strong>WATER SPORT</strong>
+                            <div class="more">VIEW MORE</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="cat04" data-aos="fade-up">
+                    <a href="#">
+                        <span class="bg"></span>
+                        <div class="txt_wrap">
+                            <strong>INDOOR SWIM</strong>
+                            <div class="more">VIEW MORE</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="cat05" data-aos="fade-left">
+                    <a href="#">
+                        <span class="bg"></span>
+                        <div class="txt_wrap">
+                            <strong>HOLIDAY</strong>
+                            <div class="more">VIEW MORE</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="cat06" data-aos="fade-right">
+                    <a href="#">
+                        <span class="bg"></span>
+                        <div class="txt_wrap">
+                            <strong>COSMETIC</strong>
+                            <div class="more">VIEW MORE</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main_brand">
+            <div class="brand_story" data-aos="fade-up">
+                <strong>BARREL<br>BRAND<br>STORY</strong>
+                <div class="bg">배럴 브랜드 스토리</div>
+                <div class="bg_bottom"></div>
+                <p>배럴(BARREL)은 서퍼들이 꿈꾸는<br>가장 멋진 파도의 이름 중 하나를 의미합니다.<br>BARREL WAVE는 TUBE라고도 불리는 터널 형태의 파도이며,<br>서퍼들이 배럴 파도를 타게 되는(GET BARREL)날은<br>최고의 기분을 만끽하는 순간입니다.<br>우리는 그런 최고의 순간에 여러분과 함께하는<br>브랜드가 되고 싶습니다.</p>
+                
+                <div class="more">
+                    <a href="#">VIEW MORE</a>
+                </div>
+            </div>
+            <div class="brand_visual" data-aos="fade-up">
+                <strong>BARREL<br>VISUAL</strong>
+                <div class="bg">배럴 비주얼</div>
+                <div class="bg_bottom"></div>
+                <p>배럴만의 특별한 룩북과 영상을 감상해보세요.</p>
+                <div class="more">
+                    <a href="#">VIEW MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="main_sns">
+            <div class="txt_wrap">
+                <h3 class="txt_title">INSTAGRAM</h3>
+                <p><a href="https://www.instagram.com/getbarrel/">@ getbarrel</a></p>
+            </div>
+            <div class="sns_con" data-aos="fade-up">
+                <ul>
+                    <li><a href="#"><img src="assets/img/banner/bn_sns01.jpg" alt="배럴 인스타 - 스쿠버다이빙 투어01"></a></li>
+                    <li><a href="#"><img src="assets/img/banner/bn_sns02.jpg" alt="배럴 인스타 - 스쿠버다이빙 투어02"></a></li>
+                    <li><a href="#"><img src="assets/img/banner/bn_sns03.jpg" alt="배럴 인스타 - 글로우비키니01"></a></li>
+                    <li><a href="#"><img src="assets/img/banner/bn_sns04.jpg" alt="배럴 인스타 - 글로우비키니02"></a></li>
+                    <li><a href="#"><img src="assets/img/banner/bn_sns05.jpg" alt="배럴 인스타 - 블락 드라이백 시리즈"></a></li>
+                    <li><a href="#"><img src="assets/img/banner/bn_sns06.jpg" alt="배럴 인스타 - 배럴 할인 이벤트"></a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_con">
+            <nav class="foot_top">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">앱 다운로드</a></li>
+                </ul>
+            </nav>
+            <div class="foot_sns">
+                <ul>
+                    <li><a href="#" class="sns01"></a></li>
+                    <li><a href="#" class="sns02"></a></li>
+                    <li><a href="#" class="sns03"></a></li>
+                    <li><a href="#" class="sns04"></a></li>
+                </ul>
+            </div>
+            <div class="foot_info">
+                <p class="foot_txt"><strong>고객센터 1899-8751</strong></p>
+                <p>평일 10:00-18:00 | 토,일,공휴일 휴무 <br> 점심시간 13:00-14:00</p>
+                <p class="foot_txt"><strong>주식회사 배럴</strong></p>
+                <p>주소 : 서울 강남구 논현로 709 (논현동) 로얄토토 신사옥 4층</p>
+                <p>팩스 : 02-540-3176</p>
+                <p>대표 : 서종환 / 이상훈</p>
+                <p>사업자번호 : 105-87-39951</p>
+                <p>통신판매업신고 : 제2014-서울강남-03158</p>
+                <p class="foot_txt">© barrel. all rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
